@@ -8,29 +8,31 @@
 # All rights reserved.
 # See below for authors.
 
-title: 1st New Longton Scouts
-heading: Welcome to 1st New Longton Scouts!
+title: 1st Example Scouts
+heading: Welcome to your new group website!
 layout: default
-authors: Alex Paterson and Chris Worthington
+authors: [Your Name Here]
 colour: 7413dc
 
 ---
 
+<!-- The Carousel with default image set. -->
 <script type = "text/JavaScript" src = "/assets/js/Carousel.js"></script>
+<img src = "/assets/img/placeholder.jpg" alt = "A placeholder image." id = "CarouselImage" class = "Carousel">
 
-<img src = "/assets/img/camping.jpeg" alt = "A group of Beavers camping." id = "CarouselImage" class = "Carousel"> <!-- Default to old image. -->
+<p>This page is the start of a great website, but there's still some work to do. You can add your own pages by creating HTML files next to these ones, and adding the appropriate
+front matter (you can use the included pages as templates). To add your new pages to the menu at the top, open the _includes folder, then open the menubar.html file. Next,
+add a link to your page as a normal HTML link. If you would like a dropdown menu like we use here, copy the line for that and change the options to suit you.</p>
 
-<p>Welcome to 1st New Longton Scouts, we are a Scout group offering fun, challenge and adventure to young people aged 4-18. We aim to build the confidence of
-young people and develop skills that will stay for life. Whether you are a young person looking to join or an adult looking to volunteer come and give Scouting a
-go in New Longton!</p>
-	
-<a href = "squirrels.html"><button class = "SectionButton" style = "background-color: #ed3f23;">Squirrels (4 - 6)</button></a>
-<a href = "beavers.html"><button class = "SectionButton" style = "background-color: #006ddf;">Beavers (6 - 8)</button></a>
+<p>Make sure you include your group's logo - the Scouts Brand Centre has an option to create a logo image. Export it as PNG, then save it to /assets/img with the name "logo.png".
+It will then overwrite the default logo, and your site will start to look your own. To carry on the branding for the rest of the theme, edit _config.yml to set your group name.</p>
+
+<p>The Downloads and Stats pages are included and should be ready for use after you change the name in front matter to match your group's. The Downloads page pulls files from
+/downloads, so save any file you would like the users to be able to download to there.</p>
+
+<p>The Documentation is available online, and can be accessed through the purple button below.</p>
+
+<a href = "https://github.com/newlongtonscouts/jekyll-theme-be-prepared"><button class = "SectionButton" style = "background-color: #003982;">Theme</button></a>
+<a href = "contact.html"><button class = "SectionButton" style = "background-color: #23a950;">Get in Touch!</button></a>
 <br>
-<a href = "cubs.html"><button class = "SectionButton" style = "background-color: #23a950;">Cubs (8 - 10)</button></a>
-<a href = "scouts.html"><button class = "SectionButton" style = "background-color: #00a794;">Scouts (10 - 14)</button></a>
-<br>
-<a href = "explorers.html"><button class = "SectionButton" style = "background-color: #003982;">Explorers (14 - 18)</button></a>
-<a href = "volunteers.html"><button class = "SectionButton" style = "background-color: #205b41;">Adult Volunteers</button></a>
-<br>
-<a href = "jointheadventure.html"><button class = "JoinTheAdventureButton">Join the Adventure!</button></a>
+<a href = "404.html"><button class = "JoinTheAdventureButton">Go to the Docs</button></a>

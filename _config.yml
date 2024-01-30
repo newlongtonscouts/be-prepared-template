@@ -18,7 +18,7 @@ plugins:
 
 #theme: jekyll-theme-be-prepared # Uncomment this line to use be-prepared as a gem theme.
 remote_theme: newlongtonscouts/jekyll-theme-be-prepared # You can use @ and then a version number to specify a specific build.
-stylesheet: be-prepared.css # Remember to import be-prepared.css into your own custom stylesheets.
+stylesheet: custom.css
 
 
 # Version Settings
@@ -32,4 +32,4 @@ releasedatetime: 2024-01-01T00:00:00Z # The release date and time of the current
 # Misc. Settings
 
 devbanner: true # Set to false to hide the yellow sticky banner. You can edit the contents of the banner by adding _includes/devbanner.html
-instagram: https://www.instagram.com/newlongtonscouts/ # The full address of your Instagram page if you want to use the default Socials link.
+instagram: https://www.instagram.com/scouts/ # The full address of your Instagram page if you want to use the default Socials link.
