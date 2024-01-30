@@ -1,0 +1,28 @@
+---
+
+# **************
+# * stats.html *
+# **************
+#
+# Copyright 2024 1st New Longton Scouts.
+# All rights reserved.
+# See below for authors.
+
+title: Stats - 1st New Longton Scouts
+heading: Stats
+layout: textpage
+authors: Alex Paterson
+colour: 7413dc
+
+---
+
+<p><b>Site Name: </b>{{ site.url }}</p>
+{% if site.manualversion And site.manualversion != "" And site.manualversion != nil %}
+   <p><b>Site Version: </b>{{ site.manualversion }}</p>
+{% else %}
+	<script type = "module" src = "/assets/js/VersionNumber.js"></script>
+	<p><b>Site Version: </b><span id = "VersionNumber">Awaiting GitHub API...</span></p>
+{% endif %}
+<p><b>Theme Version: </b>{% include themeversion.html %}</p>
+<p><b>Build Date: </b>{{ site.time | date: "%d/%m/%Y" }}</p>
+<p><b>Build Time: </b>{{ site.time | date: "%H:%M:%S" }}</p>

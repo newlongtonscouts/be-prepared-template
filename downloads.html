@@ -1,0 +1,33 @@
+---
+
+# ******************
+# * downloads.html *
+# ******************
+#
+# Copyright 2024 1st New Longton Scouts.
+# All rights reserved.
+# See below for authors.
+
+title: Downloads - 1st New Longton Scouts
+heading: Downloads
+layout: textpage
+authors: Alex Paterson
+colour: 7413dc
+
+---
+
+<div class = "BorderedTable">
+	<table>
+		<tr>
+			<th>File</th>
+			<th>Download</th>
+		</tr>
+		{% assign downloads = site.static_files | where_exp: "file", "file.path contains '/downloads/'" %}
+		{% for file in downloads %}
+			<tr>
+				<td><b>{{ file.name }}</b></td>
+				<td style = "text-align: center;"><a href = "{{ file.path }}"><button class = "DownloadButton">Download</button></a></td>
+			</tr>
+		{% endfor %}
+	</table>
+</div>
